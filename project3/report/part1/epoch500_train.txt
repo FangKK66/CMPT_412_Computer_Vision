@@ -1,0 +1,50 @@
+[03/03 04:23:02 d2.data.build]: Removed 0 images with no usable annotations. 198 images left.
+[03/03 04:23:02 d2.data.build]: Distribution of instances among all 1 categories:
+|  category  | #instances   |
+|:----------:|:-------------|
+|   planes   | 7980         |
+|            |              |
+[03/03 04:23:02 d2.data.dataset_mapper]: [DatasetMapper] Augmentations used in training: [ResizeShortestEdge(short_edge_length=(640, 672, 704, 736, 768, 800), max_size=1333, sample_style='choice'), RandomFlip()]
+[03/03 04:23:02 d2.data.build]: Using training sampler TrainingSampler
+[03/03 04:23:02 d2.data.common]: Serializing 198 elements to byte tensors and concatenating them all ...
+[03/03 04:23:02 d2.data.common]: Serialized dataset takes 15.40 MiB
+WARNING [03/03 04:23:02 d2.solver.build]: SOLVER.STEPS contains values larger than SOLVER.MAX_ITER. These values will be ignored.
+model_final_f6e8b1.pkl: 243MB [00:04, 52.5MB/s]                           
+WARNING:fvcore.common.checkpoint:Skip loading parameter 'roi_heads.box_predictor.cls_score.weight' to the model due to incompatible shapes: (81, 1024) in the checkpoint but (2, 1024) in the model! You might want to double check if this is expected.
+WARNING:fvcore.common.checkpoint:Skip loading parameter 'roi_heads.box_predictor.cls_score.bias' to the model due to incompatible shapes: (81,) in the checkpoint but (2,) in the model! You might want to double check if this is expected.
+WARNING:fvcore.common.checkpoint:Skip loading parameter 'roi_heads.box_predictor.bbox_pred.weight' to the model due to incompatible shapes: (320, 1024) in the checkpoint but (4, 1024) in the model! You might want to double check if this is expected.
+WARNING:fvcore.common.checkpoint:Skip loading parameter 'roi_heads.box_predictor.bbox_pred.bias' to the model due to incompatible shapes: (320,) in the checkpoint but (4,) in the model! You might want to double check if this is expected.
+WARNING:fvcore.common.checkpoint:Some model parameters or buffers are not found in the checkpoint:
+roi_heads.box_predictor.bbox_pred.{bias, weight}
+roi_heads.box_predictor.cls_score.{bias, weight}
+[03/03 04:23:17 d2.engine.train_loop]: Starting training from iteration 0
+/usr/local/lib/python3.8/dist-packages/torch/_tensor.py:575: UserWarning: floor_divide is deprecated, and will be removed in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values.
+To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor'). (Triggered internally at  /pytorch/aten/src/ATen/native/BinaryOps.cpp:467.)
+  return torch.floor_divide(self, other)
+[03/03 04:23:50 d2.utils.events]:  eta: 0:06:47  iter: 19  total_loss: 2.176  loss_cls: 0.7444  loss_box_reg: 0.2614  loss_rpn_cls: 0.888  loss_rpn_loc: 0.3586  time: 1.5362  data_time: 0.9160  lr: 1.1689e-05  max_mem: 3784M
+[03/03 04:24:22 d2.utils.events]:  eta: 0:08:24  iter: 39  total_loss: 1.795  loss_cls: 0.6164  loss_box_reg: 0.3396  loss_rpn_cls: 0.3982  loss_rpn_loc: 0.3874  time: 1.5717  data_time: 0.9247  lr: 2.3677e-05  max_mem: 3784M
+[03/03 04:24:58 d2.utils.events]:  eta: 0:08:26  iter: 59  total_loss: 1.408  loss_cls: 0.4809  loss_box_reg: 0.3537  loss_rpn_cls: 0.242  loss_rpn_loc: 0.2929  time: 1.6391  data_time: 1.1025  lr: 3.5665e-05  max_mem: 5008M
+[03/03 04:25:32 d2.utils.events]:  eta: 0:08:03  iter: 79  total_loss: 1.189  loss_cls: 0.3151  loss_box_reg: 0.1031  loss_rpn_cls: 0.2853  loss_rpn_loc: 0.339  time: 1.6573  data_time: 1.0406  lr: 4.7653e-05  max_mem: 5008M
+[03/03 04:26:05 d2.utils.events]:  eta: 0:08:17  iter: 99  total_loss: 1.351  loss_cls: 0.3887  loss_box_reg: 0.3737  loss_rpn_cls: 0.2041  loss_rpn_loc: 0.2595  time: 1.6550  data_time: 0.9482  lr: 5.9641e-05  max_mem: 5008M
+[03/03 04:26:52 d2.utils.events]:  eta: 0:08:12  iter: 119  total_loss: 1.303  loss_cls: 0.3973  loss_box_reg: 0.3336  loss_rpn_cls: 0.1923  loss_rpn_loc: 0.3068  time: 1.7711  data_time: 1.6345  lr: 7.1629e-05  max_mem: 5452M
+[03/03 04:27:20 d2.utils.events]:  eta: 0:07:38  iter: 139  total_loss: 1.126  loss_cls: 0.3068  loss_box_reg: 0.3309  loss_rpn_cls: 0.1906  loss_rpn_loc: 0.2603  time: 1.7215  data_time: 0.7585  lr: 8.3617e-05  max_mem: 5452M
+[03/03 04:27:53 d2.utils.events]:  eta: 0:07:06  iter: 159  total_loss: 1.217  loss_cls: 0.2958  loss_box_reg: 0.2646  loss_rpn_cls: 0.21  loss_rpn_loc: 0.3407  time: 1.7104  data_time: 0.9413  lr: 9.5605e-05  max_mem: 5452M
+[03/03 04:28:18 d2.utils.events]:  eta: 0:06:30  iter: 179  total_loss: 1.152  loss_cls: 0.3103  loss_box_reg: 0.4479  loss_rpn_cls: 0.1722  loss_rpn_loc: 0.2325  time: 1.6596  data_time: 0.5785  lr: 0.00010759  max_mem: 6248M
+[03/03 04:28:48 d2.utils.events]:  eta: 0:05:54  iter: 199  total_loss: 1.214  loss_cls: 0.3333  loss_box_reg: 0.4909  loss_rpn_cls: 0.1709  loss_rpn_loc: 0.2097  time: 1.6424  data_time: 0.7722  lr: 0.00011958  max_mem: 6248M
+[03/03 04:29:26 d2.utils.events]:  eta: 0:05:32  iter: 219  total_loss: 1.26  loss_cls: 0.3107  loss_box_reg: 0.3401  loss_rpn_cls: 0.1747  loss_rpn_loc: 0.2479  time: 1.6663  data_time: 1.1770  lr: 0.00013157  max_mem: 6248M
+[03/03 04:29:52 d2.utils.events]:  eta: 0:05:04  iter: 239  total_loss: 1.196  loss_cls: 0.3507  loss_box_reg: 0.4052  loss_rpn_cls: 0.1532  loss_rpn_loc: 0.1973  time: 1.6357  data_time: 0.6564  lr: 0.00014356  max_mem: 6248M
+[03/03 04:30:29 d2.utils.events]:  eta: 0:04:43  iter: 259  total_loss: 1.153  loss_cls: 0.2805  loss_box_reg: 0.4063  loss_rpn_cls: 0.1756  loss_rpn_loc: 0.2475  time: 1.6514  data_time: 1.1879  lr: 0.00015554  max_mem: 6248M
+[03/03 04:31:00 d2.utils.events]:  eta: 0:04:19  iter: 279  total_loss: 1.14  loss_cls: 0.2844  loss_box_reg: 0.3867  loss_rpn_cls: 0.186  loss_rpn_loc: 0.2427  time: 1.6458  data_time: 0.8741  lr: 0.00016753  max_mem: 7637M
+[03/03 04:31:31 d2.utils.events]:  eta: 0:03:57  iter: 299  total_loss: 1.125  loss_cls: 0.2641  loss_box_reg: 0.4203  loss_rpn_cls: 0.1539  loss_rpn_loc: 0.1849  time: 1.6362  data_time: 0.8208  lr: 0.00017952  max_mem: 7637M
+[03/03 04:32:10 d2.utils.events]:  eta: 0:03:34  iter: 319  total_loss: 1.063  loss_cls: 0.2504  loss_box_reg: 0.4032  loss_rpn_cls: 0.1623  loss_rpn_loc: 0.2295  time: 1.6581  data_time: 1.3112  lr: 0.00019151  max_mem: 7637M
+[03/03 04:32:41 d2.utils.events]:  eta: 0:03:12  iter: 339  total_loss: 1.067  loss_cls: 0.2563  loss_box_reg: 0.4735  loss_rpn_cls: 0.1253  loss_rpn_loc: 0.2465  time: 1.6501  data_time: 0.8321  lr: 0.0002035  max_mem: 7637M
+[03/03 04:33:10 d2.utils.events]:  eta: 0:02:46  iter: 359  total_loss: 0.9437  loss_cls: 0.2174  loss_box_reg: 0.3405  loss_rpn_cls: 0.1569  loss_rpn_loc: 0.2069  time: 1.6409  data_time: 0.7899  lr: 0.00021548  max_mem: 7637M
+[03/03 04:33:39 d2.utils.events]:  eta: 0:02:23  iter: 379  total_loss: 1.065  loss_cls: 0.252  loss_box_reg: 0.3448  loss_rpn_cls: 0.1137  loss_rpn_loc: 0.2289  time: 1.6296  data_time: 0.7065  lr: 0.00022747  max_mem: 7637M
+[03/03 04:34:18 d2.utils.events]:  eta: 0:02:01  iter: 399  total_loss: 0.9936  loss_cls: 0.2404  loss_box_reg: 0.3898  loss_rpn_cls: 0.1391  loss_rpn_loc: 0.2035  time: 1.6444  data_time: 1.2185  lr: 0.00023946  max_mem: 7637M
+[03/03 04:34:54 d2.utils.events]:  eta: 0:01:35  iter: 419  total_loss: 0.9614  loss_cls: 0.2268  loss_box_reg: 0.3865  loss_rpn_cls: 0.1485  loss_rpn_loc: 0.2601  time: 1.6520  data_time: 1.1091  lr: 0.00025145  max_mem: 7637M
+[03/03 04:35:25 d2.utils.events]:  eta: 0:01:11  iter: 439  total_loss: 0.7931  loss_cls: 0.1795  loss_box_reg: 0.3307  loss_rpn_cls: 0.1098  loss_rpn_loc: 0.1902  time: 1.6475  data_time: 0.8752  lr: 0.00026344  max_mem: 7637M
+[03/03 04:35:59 d2.utils.events]:  eta: 0:00:48  iter: 459  total_loss: 0.9487  loss_cls: 0.2518  loss_box_reg: 0.3749  loss_rpn_cls: 0.1088  loss_rpn_loc: 0.2167  time: 1.6507  data_time: 1.0173  lr: 0.00027542  max_mem: 7637M
+[03/03 04:36:29 d2.utils.events]:  eta: 0:00:24  iter: 479  total_loss: 0.7715  loss_cls: 0.1521  loss_box_reg: 0.3275  loss_rpn_cls: 0.1064  loss_rpn_loc: 0.1508  time: 1.6449  data_time: 0.8262  lr: 0.00028741  max_mem: 7637M
+[03/03 04:37:00 d2.utils.events]:  eta: 0:00:00  iter: 499  total_loss: 0.8332  loss_cls: 0.1945  loss_box_reg: 0.3367  loss_rpn_cls: 0.1021  loss_rpn_loc: 0.2183  time: 1.6312  data_time: 0.6248  lr: 0.0002994  max_mem: 7637M
+[03/03 04:37:00 d2.engine.hooks]: Overall training speed: 498 iterations in 0:13:32 (1.6312 s / it)
+[03/03 04:37:00 d2.engine.hooks]: Total training time: 0:13:37 (0:00:05 on hooks)

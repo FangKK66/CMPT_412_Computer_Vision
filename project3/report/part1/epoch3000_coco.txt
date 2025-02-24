@@ -1,0 +1,61 @@
+WARNING [03/03 11:43:42 d2.evaluation.coco_evaluation]: COCO Evaluator instantiated using config, this is deprecated behavior. Please pass in explicit arguments instead.
+[03/03 11:43:42 d2.evaluation.coco_evaluation]: Trying to convert 'plane_train' to COCO format ...
+WARNING [03/03 11:43:42 d2.data.datasets.coco]: Using previously cached COCO format annotations at '/content/drive/My Drive/CMPT_CV_lab3/output/plane_train_coco_format.json'. You need to clear the cache file if your dataset has been modified.
+[03/03 11:44:55 d2.data.dataset_mapper]: [DatasetMapper] Augmentations used in inference: [ResizeShortestEdge(short_edge_length=(800, 800), max_size=1333, sample_style='choice')]
+[03/03 11:44:55 d2.data.common]: Serializing 198 elements to byte tensors and concatenating them all ...
+[03/03 11:44:55 d2.data.common]: Serialized dataset takes 15.40 MiB
+[03/03 11:44:55 d2.evaluation.evaluator]: Start inference on 198 batches
+[03/03 11:45:05 d2.evaluation.evaluator]: Inference done 11/198. Dataloading: 0.4990 s/iter. Inference: 0.1643 s/iter. Eval: 0.0003 s/iter. Total: 0.6637 s/iter. ETA=0:02:04
+[03/03 11:45:10 d2.evaluation.evaluator]: Inference done 21/198. Dataloading: 0.3964 s/iter. Inference: 0.1704 s/iter. Eval: 0.0004 s/iter. Total: 0.5675 s/iter. ETA=0:01:40
+[03/03 11:45:15 d2.evaluation.evaluator]: Inference done 46/198. Dataloading: 0.1957 s/iter. Inference: 0.1606 s/iter. Eval: 0.0006 s/iter. Total: 0.3571 s/iter. ETA=0:00:54
+[03/03 11:45:22 d2.evaluation.evaluator]: Inference done 59/198. Dataloading: 0.2248 s/iter. Inference: 0.1620 s/iter. Eval: 0.0005 s/iter. Total: 0.3877 s/iter. ETA=0:00:53
+[03/03 11:45:28 d2.evaluation.evaluator]: Inference done 61/198. Dataloading: 0.3141 s/iter. Inference: 0.1628 s/iter. Eval: 0.0005 s/iter. Total: 0.4780 s/iter. ETA=0:01:05
+[03/03 11:45:34 d2.evaluation.evaluator]: Inference done 70/198. Dataloading: 0.3454 s/iter. Inference: 0.1628 s/iter. Eval: 0.0005 s/iter. Total: 0.5093 s/iter. ETA=0:01:05
+[03/03 11:45:40 d2.evaluation.evaluator]: Inference done 74/198. Dataloading: 0.4021 s/iter. Inference: 0.1641 s/iter. Eval: 0.0005 s/iter. Total: 0.5675 s/iter. ETA=0:01:10
+[03/03 11:45:45 d2.evaluation.evaluator]: Inference done 80/198. Dataloading: 0.4265 s/iter. Inference: 0.1663 s/iter. Eval: 0.0005 s/iter. Total: 0.5940 s/iter. ETA=0:01:10
+[03/03 11:45:52 d2.evaluation.evaluator]: Inference done 85/198. Dataloading: 0.4737 s/iter. Inference: 0.1661 s/iter. Eval: 0.0005 s/iter. Total: 0.6411 s/iter. ETA=0:01:12
+[03/03 11:46:00 d2.evaluation.evaluator]: Inference done 89/198. Dataloading: 0.5375 s/iter. Inference: 0.1670 s/iter. Eval: 0.0005 s/iter. Total: 0.7057 s/iter. ETA=0:01:16
+[03/03 11:46:07 d2.evaluation.evaluator]: Inference done 95/198. Dataloading: 0.5668 s/iter. Inference: 0.1663 s/iter. Eval: 0.0005 s/iter. Total: 0.7344 s/iter. ETA=0:01:15
+[03/03 11:46:12 d2.evaluation.evaluator]: Inference done 99/198. Dataloading: 0.5909 s/iter. Inference: 0.1675 s/iter. Eval: 0.0005 s/iter. Total: 0.7597 s/iter. ETA=0:01:15
+[03/03 11:46:17 d2.evaluation.evaluator]: Inference done 107/198. Dataloading: 0.5829 s/iter. Inference: 0.1661 s/iter. Eval: 0.0005 s/iter. Total: 0.7504 s/iter. ETA=0:01:08
+[03/03 11:46:23 d2.evaluation.evaluator]: Inference done 116/198. Dataloading: 0.5709 s/iter. Inference: 0.1651 s/iter. Eval: 0.0005 s/iter. Total: 0.7373 s/iter. ETA=0:01:00
+[03/03 11:46:28 d2.evaluation.evaluator]: Inference done 121/198. Dataloading: 0.5831 s/iter. Inference: 0.1653 s/iter. Eval: 0.0005 s/iter. Total: 0.7497 s/iter. ETA=0:00:57
+[03/03 11:46:33 d2.evaluation.evaluator]: Inference done 129/198. Dataloading: 0.5814 s/iter. Inference: 0.1637 s/iter. Eval: 0.0005 s/iter. Total: 0.7465 s/iter. ETA=0:00:51
+[03/03 11:46:39 d2.evaluation.evaluator]: Inference done 138/198. Dataloading: 0.5678 s/iter. Inference: 0.1614 s/iter. Eval: 0.0090 s/iter. Total: 0.7391 s/iter. ETA=0:00:44
+[03/03 11:46:45 d2.evaluation.evaluator]: Inference done 145/198. Dataloading: 0.5700 s/iter. Inference: 0.1623 s/iter. Eval: 0.0086 s/iter. Total: 0.7417 s/iter. ETA=0:00:39
+[03/03 11:46:50 d2.evaluation.evaluator]: Inference done 150/198. Dataloading: 0.5831 s/iter. Inference: 0.1618 s/iter. Eval: 0.0083 s/iter. Total: 0.7541 s/iter. ETA=0:00:36
+[03/03 11:46:55 d2.evaluation.evaluator]: Inference done 152/198. Dataloading: 0.6074 s/iter. Inference: 0.1620 s/iter. Eval: 0.0082 s/iter. Total: 0.7786 s/iter. ETA=0:00:35
+[03/03 11:47:01 d2.evaluation.evaluator]: Inference done 157/198. Dataloading: 0.6178 s/iter. Inference: 0.1635 s/iter. Eval: 0.0080 s/iter. Total: 0.7902 s/iter. ETA=0:00:32
+[03/03 11:47:07 d2.evaluation.evaluator]: Inference done 174/198. Dataloading: 0.5748 s/iter. Inference: 0.1612 s/iter. Eval: 0.0072 s/iter. Total: 0.7441 s/iter. ETA=0:00:17
+[03/03 11:47:13 d2.evaluation.evaluator]: Inference done 184/198. Dataloading: 0.5715 s/iter. Inference: 0.1608 s/iter. Eval: 0.0069 s/iter. Total: 0.7401 s/iter. ETA=0:00:10
+[03/03 11:47:19 d2.evaluation.evaluator]: Inference done 189/198. Dataloading: 0.5803 s/iter. Inference: 0.1614 s/iter. Eval: 0.0067 s/iter. Total: 0.7493 s/iter. ETA=0:00:06
+[03/03 11:47:22 d2.evaluation.evaluator]: Total inference time: 0:02:21.444470 (0.732873 s / iter per device, on 1 devices)
+[03/03 11:47:22 d2.evaluation.evaluator]: Total inference pure compute time: 0:00:31 (0.161154 s / iter per device, on 1 devices)
+[03/03 11:47:23 d2.evaluation.coco_evaluation]: Preparing results for COCO format ...
+[03/03 11:47:23 d2.evaluation.coco_evaluation]: Saving results to /content/drive/My Drive/CMPT_CV_lab3/output/coco_instances_results.json
+[03/03 11:47:23 d2.evaluation.coco_evaluation]: Evaluating predictions with unofficial COCO API...
+Loading and preparing results...
+DONE (t=0.02s)
+creating index...
+index created!
+[03/03 11:47:23 d2.evaluation.fast_eval_api]: Evaluate annotation type *bbox*
+[03/03 11:47:23 d2.evaluation.fast_eval_api]: COCOeval_opt.evaluate() finished in 0.24 seconds.
+[03/03 11:47:23 d2.evaluation.fast_eval_api]: Accumulating evaluation results...
+[03/03 11:47:23 d2.evaluation.fast_eval_api]: COCOeval_opt.accumulate() finished in 0.02 seconds.
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.396
+ Average Precision  (AP) @[ IoU=0.50      | area=   all | maxDets=100 ] = 0.626
+ Average Precision  (AP) @[ IoU=0.75      | area=   all | maxDets=100 ] = 0.441
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.296
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.474
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.713
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=  1 ] = 0.017
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets= 10 ] = 0.145
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.429
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.301
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.516
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.787
+[03/03 11:47:23 d2.evaluation.coco_evaluation]: Evaluation results for bbox: 
+|   AP   |  AP50  |  AP75  |  APs   |  APm   |  APl   |
+|:------:|:------:|:------:|:------:|:------:|:------:|
+| 39.560 | 62.564 | 44.099 | 29.556 | 47.392 | 71.334 |
+OrderedDict([('bbox', {'AP': 39.56036226685065, 'AP50': 62.56438470764044, 'AP75': 44.09927021010758, 'APs': 29.555516161216573, 'APm': 47.39205375727488, 'APl': 71.33395508759068})])
